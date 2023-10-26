@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/b1ee0be1b4.js" crossorigin="anonymous"></script>
+    <style>
+    html {
+        background-color: rgb(252, 108, 252);
+    }
+      
+    h2 {
+        padding:1em;
+    }
+    header 
+    {
+        border-bottom: 2px solid rgb(120, 230, 255);
+    }
+    .logo{
+       background-image: url(images/images\ 3.jpeg);
+       background-size: cover;
+       height: 650px;
+    }
+    img{
+    padding-bottom: 3px;
+    width: 1000px;
+    height: 100px;
+    text-align: left;
+    }
+    h1{
+        text-align: center;
+        font-size: 200%;
+        color: #faf9f8;
+        text-shadow: #b2b0b0;
+        padding-bottom: 30px;
+        
+    }
+    .g-col-4{
+        border: 1px solid black;
+        background-color: #ffab0e;
+
+    }
+    .g-col-4 a{
+        font-size: large;
+        color: aliceblue;
+
+    }
+    .g-col-4 a::after{
+        background-color: aqua;
+    }
+    body {
+        width: 90%;
+        background-color: rgb(137, 136, 136);
+        margin:15px auto;
+        border: 1px solid rgb(244, 246, 247);
+    }
+    main {
+        width: 80%;
+        height: 4000px;
+       
+        border-right: 2px solid rgb(251, 254, 251) ;
+        float: left;
+    }
+    main img{
+        float: left;
+        width: 50%;
+        height: 400px
+    }
+    .text{
+        padding-left: 50px;
+    }
+    h3{
+        padding-left: 500px;
+    }
+    h4{
+        padding: 10px;
+    }
+    #Achitecture img{
+        width: 30%;
+        height: 200px;
+    }
+    #Bharathanatyam-Yajna img{
+        width: 30%;
+        height: 200px;
+        float: right;
+
+    }
+    #top img{
+        width: 30%;
+        height: 200px;
+
+
+    }
+    ::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #0b0b0b;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#353b48,#ff004f);
+    border-radius: 10px;
+}
+#king img{
+    width: 30%;
+}
+#Inscriptions img{
+    width: 40%;
+    height: 250px;
+}
+    aside{
+        width:20% ;
+        float: right; 
+        background-color: #fdca23;
+        height: 1000px;
+    }
+    .asside li a{
+        color: #050505;
+        size: 10px;
+        
+    
+    }
+    .asside li a ::after{
+        transform: calc(color);
+        color: #00eeff;
+    }
+    footer{
+        clear:both;
+        border-top: 2px solid rgb(254, 254, 254);
+        background-color: #7cf0f9;
+        
+    }
+    .contect-left{
+    flex-basis: 35%;
+}
+.contect-right{
+    flex-basis: 60%;
+}
+.contect-left p{
+    margin-top: 30px;
+
+}
+.contect-left p i {
+    color: #fb51de;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition:transform 0.5s;
+}
+.social-icons a:hover{
+    color: #fb51de;
+    transform: translate(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #fb51de;
+}
+.contect-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15PX;
+    margin: 15PX 0;
+    color: #0a0909;
+    font-size: 18PX;
+    border-radius: 6PX;
+
+}
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #fdfbfb;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+nav .fas{
+    display: none;
+
+}
+@media only screen and (max-width:600px){
+    .logo{
+        width: 50%;
+    }
+    h1{
+        text-align: center;
+        padding-top: 300px;
+        padding-left: 30px;
+    }
+    #home{
+        background-image: url(images/images.jpeg);
+        background-size: cover;
+    }
+    .grid text-center{
+        width: 30px;
+    }
+    main{
+        width: 60%;
+        height: 6000px;
+       
+        border-right: 2px solid rgb(251, 254, 251) ;
+        float: left;
+        font-size: x-small;
+    }
+    aside{
+        width:40% ;
+        float: top; 
+        background-color: #fdca23;
+        height: 1000px;
+        padding-right: 30px;
+        font-size: xx-small;
+    }
+    h2{
+        font-size: small;
+    }
+    .contect-left,.contect-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .work:hover img{
+        transform: scale(1.1);
+    }
+    img{
+        width: 50%;
+    }
+    main img{
+        float: left;
+        width: 50%;
+        height: 100px
+    }
+    #Achitecture img{
+        width: 30%;
+        height: 100px;
+    }
+    #Bharathanatyam-Yajna img{
+        width: 30%;
+        height: 100px;
+        float: right;
+
+    }
+    h3{
+        padding: 2px;
+    }
+    .text{
+        padding: 1px;
+    }
+    #top img{
+        width: 30%;
+        height: 100px;
+
+
+    }
+}
+   
+#king img{
+    width: 30%;
+    height: 100px;
+}
+#Inscriptions img{
+    width: 40%;
+    height: 250px;
+}
+    
+    </style>
+</head>
+<body>
+<header>
+    <div id="home">
+        <div class="logo">
+        <img src="images/1_IIA8o_HIBwYXV10LArGQ6g.jpg" alt="logo">
+        <h1>NAMMA THANJAVUR</h1>
+    </div>
+    <div class="grid text-center">
+        <div class="g-col-4"><a href="#home">home</a></div>
+        <div class="g-col-4"><a href="#about">about</a></div>
+        <div class="g-col-4"><a href="#contact">contact</a></div>
+      </div>
+    </div>
+</header>
+
+<main>
+    <h2>About</h2>
+    <img src="images/download.jpeg" alt="">
+    <div class="text">
+        <div id="about">
+    <h3>Brihadeeswarar Temple</h3><br><br>
+    <p1>Brihadishvara Temple, called Rajarajesvaram (lit.'Lord of Rajaraja') by its builder, and known locally as Thanjai Periya Kovil (lit.
+        'Thanjavur Big Temple') and Peruvudaiyar Kovil, is a Shaivite Hindu temple built in a Chola architectural style located on the south bank of the Cauvery river in Thanjavur, Tamil Nadu, India.
+         It is one of the largest Hindu temples and an exemplar of Tamil architecture.It is also called Dakshina Meru (Meru of the South).
+         Built by Chola emperor Rajaraja I between 1003 and 1010 CE, the temple is a part of the UNESCO World Heritage Site known as the "Great Living Chola Temples", 
+        along with the Chola-era Gangaikonda Cholapuram temple and Airavatesvara temple, which are about 70 kilometres (43 mi) and 40 kilometres (25 mi) to its northeast respectively.
+
+    </p1>
+    <br><br><br>
+    <p2>
+        The original monuments of this 11th-century temple were built around a moat. 
+        It included gopura, the main temple, its massive tower, inscriptions, frescoes, and sculptures predominantly related to Shaivism, but also of Vaishnavism and Shaktism. 
+        The temple was damaged in its history and some artwork is now missing. Additional mandapam and monuments were added in the centuries that followed. The temple now stands amidst fortified walls that were added after the 16th <br><br>
+
+Built using granite, the vimana tower above the shrine is one of the tallest in South India.
+The temple has a massive colonnaded prakara (corridor) and one of the largest Shiva lingas in India.
+It is also famed for the quality of its sculpture, as well as being the location that commissioned the brass Nataraja, Shiva as the lord of dance,
+ in the 11th century. The complex includes shrines for Nandi, Parvati, Murugan, Ganesha, Sabhapati, Dakshinamurti, Chandeshvara, Varahi, Thiyagarajar of Thiruvarur, Siddhar Karuvoorar and others.
+ The temple is one of the most visited tourist attractions in Tamil Nadu. <br><br>
+
+    </p2>
+    <div id="History">
+    <h4>History</h4>
+    <p>A spectrum of dravidian temple styles continued to develop from the fifth to the ninth century over the Chalukya era
+         rule as evidenced in Aihole, Badami and Pattadakal, and then with the Pallava era as witnessed at Mamallapuram and other monuments. 
+         Thereafter, between 850 and 1280, Cholas emerged as the dominant dynasty.The early Chola period saw a greater emphasis on 
+         securing their geopolitical boundaries and less emphasis on architecture. In the tenth century, within the Chola empire emerged 
+         features such as the multifaceted columns with projecting square capitals. This, states George Michell, signaled the start of the new Chola style.
+          This South Indian style is most fully realized both in scale and detail in the Brihadeshwara temple built between 1003 and 1010 by the Chola king Rajaraja I.
+        </p>
+        </div>
+        <div id="temp">
+        <h4>Temple personnel</h4>
+        <p>An inscription on the north wall of enclosure, dated 1011 CE, gives a detailed accounts of people employed and supported by the temple. 
+            The inscription gives their wages, roles and names. It includes over 600 names including those of priests, lamp lighters, washermen, 
+            tailors, jewelers, potters, carpenters, sacred parasol bearers, dance gurus, dancing girls, singers, male and female musicians,
+             superintendents of performance artists, accountants among others. 
+            Their wages was in parcels of land, so their temple employment was likely part-time. <br><br>
+
+            The temple employed devadasis who were dancers and singers of devotional hymns. 
+            Among its numerous inscriptions are frequent gifts that state, "to provide for worship, for food to assembly of
+             sannyasis (monks or ascetics) and for repairs". According to George Michell, the Thanjavur temple was a major charity institution 
+             in its history. It provides free meal for pilgrims, devotees and wayfarers on a daily basis. On the days of Hindu festivals,
+              these meals were elaborate and when brahmins were particularly invited and fed.</p>
+            </div>
+
+              <div id="Achitecture"> 
+                <h4>Architecture</h4>
+              <p>The Peruvudaiyar temple's plan and development utilizes the axial and symmetrical geometry rules.
+                 It is classified as Perunkoil (also called Madakkoil), a big temple built on a higher platform of a natural or man-made mounds.
+                  The temple complex is a rectangle that is almost two stacked squares, covering 240.79 metres (790.0 ft) east to west, and 121.92 metres
+                   (400.0 ft) north to south. In this space are five main sections: the sanctum with the towering superstructure (sri vimana), the Nandi
+                    hall in front (Nandi-mandapam) and in between these the main community hall (mukhamandapam), the great gathering hall (mahamandapam) 
+                    and the pavilion that connects the great hall with the sanctum (Antrala). <br><br>
+                    <img src="images/TANJORE_2.jpg" alt="">
+
+                The temple complex integrates a large pillared and covered veranda (prakara) in its spacious courtyard, with a perimeter of about 450 metres (1,480 ft) for circumambulation.
+                 Outside this pillared veranda there are two walls of enclosure, the outer one being defensive and added in 1777 by the French colonial forces 
+                 with gun-holes with the temple serving as an arsenal. They made the outer wall high, isolating the temple complex area. On its east end is the 
+                 original main gopuram or gateway that is barrel vaulted. It is less than half the size of the main temple's vimana. Additional structures were
+                  added to the original temple after the 11th century, such as a mandapa in its northeast corner and additional gopurams (gateways)
+                   on its perimeters to allow people to enter and leave from multiple locations. Some of the shrines and structures were added during the Pandya,
+                    Nayaka, Vijayanagara and Maratha era, before the colonial era started, and these builders respected the original plans and symmetry rules.
+                     Inside the original temple courtyard, along with the main sanctum and Nandi-mandapam are two major shrines, one for Kartikeya and for Parvati. 
+                     The complex has additional smaller shrines. <br>
+                
+                The Peruvudaiyar temple continued the Hindu temple traditions of South India by adopting architectural and decorative elements, 
+                but its scale significantly exceeded the temples constructed before the 11th century. The Chola era architects and artisans
+                 innovated the expertise to scale up and build, particularly with heavy stone and to accomplish the 63.4 metres (208 ft) high 
+                 towering vimana.
+                Nandi mandapam and the entrance gopurams, northeast view from courtyard <br>
+                
+                Another view of the entrance
+                The temple faces east, and once had a water moat around it. This has been filled up.
+                 The fortified wall now runs around this moat. The two walls have ornate gateways called the gopurams.
+                  These are made from stone and display entablature. The main gateways are on the east side. 
+                  The first one is called the Keralantakan tiruvasal, which means the "sacred gate of the Keralantakan". 
+                  The word Keralantakan was the surname of king Rajaraja who built it. About a 100 metres (330 ft) ahead is the inner courtyard gopuram called
+                   the Rajarajan tiruvasal. This is more decorated than the Keralantakan tiruvasal, such as with its adhishthanam relief work narrating scenes 
+                   from the Puranas and other Hindu texts. The inner eastern gopuram leads to a vast courtyard, in which the shrines are all signed to east–west and north-west
+                    cardinal directions. The complex can be entered either on one axis through a five-story gopuram or with a second access directly to the huge main quadrangle through
+                     a smaller free-standing gopuram. The gopuram of the main entrance is 30 m high, smaller than the vimana.The main temple-related monuments and the great
+                      tower is in the middle of this courtyard. Around the main temple that is dedicated to Shiva, are smaller shrines, most of which are 
+                      aligned axially. These are dedicated to his consort Parvati, his sons Murugan and Ganesha, Nandi, Varahi, Karuvur deva (the guru of Rajaraja Chola),
+                       Chandeshvara and Nataraja. The Nandi mandapam has a monolithic seated bull facing the sanctum. In between them are stairs leading to a columned porch and community
+                        gathering hall, then an inner mandapa connecting to the pradakshina patha, or circumambulation path. The Nandi (bull) facing the mukh-mandapam weighs about 25 tonnes.
+                         It is made of a single stone and is about 2 m in height, 6 m in length and 2.5 m in width. 
+                The image of Nandi is a monolithic one and is one of the largest in the country.</p>
+            </div>
+            <div id="Bharathanatyam-Yajna">
+                <h4>Bharathanatyam Yajna</h4>
+                <img src="images/Thanjavur,_Brihadishwara_Temple,_dance_(6851706080).jpg" alt="">
+                <p>To mark the occasion, the state government organised a Bharathanatyam Yajna, classical 
+                    dance show under noted dancer Padma Subramaniam. It was jointly organised by the Association of 
+                    Bharatanatyam Artistes of India (ABHAI) and the Brhan Natyanjali Trust, Thanjavur. To mark the 1000th 
+                    anniversary of the building, 1,000 dancers from New Delhi, Mumbai, Pune, Tamil Nadu, Andhra Pradesh, Karnataka, Kerala, 
+                    Singapore, Malaysia and the US danced in concert to the recorded 11 verses of divine music Thiruvisaippa (ninth volume of Thirumurai)
+                     composed by Karuvur deva (the guru of Rajaraja). The small town turned into a cultural hub for two days 
+                    beginning 26 September 2010 as street performers and dancers performed throughout the town</p>
+            </div>
+            <div id="top">
+                <h4>top of the temple</h4>
+                <p>On the second floor, Shiva's Tripurantaka form in different postures is depicted corresponding to these sculptures. 
+                    <img src="images/Top_of_Brihadisvara_Temple,_Thanjavur.jpg" alt="">
+                    Above these floors, the sri-vimana towers above in thirteen storeys (talas). Above these storeys is a single square block
+                     of granite weight 80 tons, and 7.77 metres (25.5 ft) side. On top of this block, at its corners are Nandi pairs each about 
+                     1.98 metres (6 ft 6 in) by 1.68 metres (5 ft 6 in) in dimension. Above the center of this granite block rises the griva, the
+                      sikhara and the finial (stupi) of Tamil Hindu temple architecture. This stupi is 3.81 metres (12.5 ft) in height, and was 
+                      originally covered with gold (no longer).
+                      The sikhara at the top is cupola-shaped and weighs 25 tons. Each storey o
+                      f this tower is decorated with kutas and salas. The shrinking squares tower architecture of this temple differs from 
+                      the tower at the Chola temple at Gangaikondasolisvaram, because this is straight in contrast to the latter which is 
+                      curvilinear. The temple's sri-vimana magnitude has made it a towering landmark for the city.
+                       The upper storey corridor wall of the aditala is carved with 81 of the 108 dance karanas – postures of Natya Sastra.
+                        This text is the basis of the Bharathanatyam, the classical dance of Tamil Nadu. The 27 unrepresented karanas are blank 
+                        blocks of stone, and it is unclear why these were not carved. The 81 postures carved suggest the significance of this classical Indian dance form by early 11th century. <br>
+
+                    The garbhagriha is square and sits on a plinth. This is moulded and 0.5 metres (1 ft 8 in) thick. It consists of upapitham and adhishthanam,
+                     respectively 140 cm and 360 cm thick.</p>
+            </div> 
+            <div id="king">
+                <h4>raja raja chola</h4>
+                <img src="images/1_IIA8o_HIBwYXV10LArGQ6g.jpg" alt="">
+                <p>Rajaraja I (Middle Tamil: Rājarāja Cōḻaṉ; Classical Sanskrit: Rājarāja Śōḷa; 947 CE – 1014 CE),[1][2] often described as Rajaraja the Great, was a Chola emperor who reigned the southern parts of India from 985 CE to 1014 CE. An iconic 
+                    figure and often regarded as the 'King of Kings', he was the most powerful emperor in India during his reign and is remembered for reinstating the Chola influence and ensuring its supremacy across the Indian Ocean.
+                    The southern part of India was united for the very first time in the Indian history under his rule. <br><br>
+
+                    His extensive empire included vast regions of the Pandya country, the Chera country and northern Sri Lanka. He also acquired Lakshadweep and Thiladhunmadulu atoll, and part of the northern-most islands of 
+                    the Maldives in the Indian Ocean. Campaigns against the Western Gangas and the Western Chalukyas extended the Chola authority as far as the Tungabhadra River. On the eastern coast, he battled with the Telugu Chola king Jata Choda Bhima for the possession of Vengi. <br><br>
+                    
+                    Rajaraja I, being an able administrator, also built the great Rajarajeshwaram Temple at the Chola capital Thanjavur.
+                     The temple is regarded as the foremost of all temples constructed in the medieval south Indian architectural style. <br> During his
+                      reign, the texts of the Tamil poets Appar, Sambandar and Sundarar were collected and edited into one compilation called Thirumurai, 
+                      gaining him the name of 'Thirumurai Kanda Cholar' meaning The One Whom Found Thirumurai.[6][10] He initiated a massive project of land survey
+                       and assessment in 1000 CE which led to the reorganisation of Tamil country into individual units known as valanadus.
+                     Rajaraja died in 1014 CE and was succeeded by his son Rajendra Chola I.</p>
+            </div>
+            <div id="Inscriptions">
+                <h4>Inscriptions</h4>
+                <img src="images/330px-Tamil_Inscriptions_in_Thanjavur_Brahadeeshwara_Temple_written_1000_years_ago.jpg" alt=""> <br>
+                <p>The temple walls have numerous inscriptions in Tamil and Grantha scripts. Many of these begin with customary Sanskrit and Tamil
+                     language historical introduction to the king who authorized it, and predominant number of them discuss gifts to the temple or temple personnel,
+                      in some cases residents of the city.[46][47] The temple complex has sixty four inscriptions of Rajaraja Chola I, twenty nine inscriptions of Rajendra Chola I, 
+                      one each of Vikrama Chola, Kulottunga I and Rajamahendra (Rajendra II), three of a probable Pandyan king, two of Nayaka rulers namely, Achyutappa Nayaka and Mallapa Nayaka</p>
+            </div>
+            
+</div>
+
+
+</main>
+<aside>
+    <h2>To learn more</h2>
+    <div class="asside">
+    <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#temp">temple personal</a></li>
+        <li><a href="#History">about</a></li>
+        <li><a href="#Bharathanatyam-Yajna">Bharathanatyam-Yajna</a></li>
+        <li><a href="#top">top of the temple</a></li>
+        <li><a href="#king">raja raja cholan</a></li>
+        <li><a href="#Inscriptions">Inscriptions</a></li>
+    </ul>
+</div>
+
+
+</aside>
+<footer>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contect-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p> <i class="fas fa-paper-plane"></i> ababc07@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9987654321</p>
+                    <div class="social-icons">
+                        <a href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/vishothkumarv076@gmail.com" method="POST">
+                        <input type="text" placeholder="Your Name" name="Name" required>
+                        <input type="email" placeholder="Your Email" name="Email" required>
+                        <textarea rows="6" placeholder="Your Message" name="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+               
+            </div>
+            <div class="prv">
+                <a href="#header"><i class="fas fa-angle-double-up"></i></a>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ⓒ vvk. made with ❤️ by easy tutorials</p>
+        </div>
+    </div>
+    
+</footer>
+</body>
+</html>
